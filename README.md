@@ -1,14 +1,43 @@
 # S2 LITE
 
-세종대학교 2021 2학기 소프트웨어설계기초 과목에서 진행한 프로젝트 입니다.
+컴퓨터에 침입한 악성코드를 퇴치해보자!
 
-타자연습과 RPG를 합친 게임입니다. 
+## 개발 정보  
+개발팀: 소설기 11조
+개발기간: 2021.10 ~ 2021.12 
 
-사용설명서는 https://bit.ly/3HF9Ukm 를 통하여 보실 수 있습니다.
+> 이 프로젝트는 세종대학교 '소프트웨어설계기초'에서 개발되었습니다.
 
-### 개발언어
+## 기획
+
+장르 : RPG
+규칙 : 컴퓨터에 침입한 악성코드를 퇴치하는 게임
+게임 목표 : 캐릭터 성장 및 보스 퇴치
+주요 특징 : 타자를 이용한 공격 방식
+
+## 주요 기능
+
+
+## 기술 스택
+### 사용 언어<br />
 <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/></a>
 ### 사용 환경 <br />
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat-square&logo=Visual Studio&logoColor=white" />
 
-- Visual Studio 2019
+## 기술적 챌린지
+
+
+## 개발 일정
+- 2021.10 ~ 2021.12 
+
+## 팀원 소개
+
+- [오X묵] 클라이언트
+- [임X태] 클라이언트
+- [정X진] 클라이언트
+- [조윤희]클라이언트
+
+
+## 사용설명서
+
+https://bit.ly/3HF9Ukm
