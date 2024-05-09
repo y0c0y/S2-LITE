@@ -61,7 +61,7 @@ void DrawItmeFirst()
     for (int y = 0; y < 50; y++)
     {
         gotoxy(120, y);
-        printf("¶¢");
+        printf("‚îÇ");
     }
 
     drawInventory();
@@ -77,23 +77,23 @@ void drawInventory()
     }
 
     gotoxy(136, 12);
-    printf("<¿Œ∫•≈‰∏Æ>");
+    printf("<Ïù∏Î≤§ÌÜ†Î¶¨>");
     gotoxy(132, 15);
-    printf("µ∑ : %d ø¯", money);
+    printf("Îèà : %d Ïõê", money);
     gotoxy(128, 18);
-    printf("«œ±ﬁ ∞≠»≠¿« µπ : %d ∞≥", enhancementStone1);
+    printf("ÌïòÍ∏â Í∞ïÌôîÏùò Îèå : %d Í∞ú", enhancementStone1);
     gotoxy(128, 20);
-    printf("¡ﬂ±ﬁ ∞≠»≠¿« µπ : %d ∞≥", enhancementStone2);
+    printf("Ï§ëÍ∏â Í∞ïÌôîÏùò Îèå : %d Í∞ú", enhancementStone2);
     gotoxy(128, 22);
-    printf("ªÛ±ﬁ ∞≠»≠¿« µπ : %d ∞≥", enhancementStone3);
+    printf("ÏÉÅÍ∏â Í∞ïÌôîÏùò Îèå : %d Í∞ú", enhancementStone3);
     gotoxy(130, 24);
-    printf("√º∑¬ ∆˜º« : %d ∞≥", healingPotion);
+    printf("Ï≤¥Î†• Ìè¨ÏÖò : %d Í∞ú", healingPotion);
     gotoxy(130, 27);
-    printf("∏∂≥™ ∆˜º« : %d ∞≥", manaPotion);
+    printf("ÎßàÎÇò Ìè¨ÏÖò : %d Í∞ú", manaPotion);
     gotoxy(128, 29);
-    printf("√º∑¬/∏∂≥™ ∆˜º« : %d ∞≥", allPotion);
+    printf("Ï≤¥Î†•/ÎßàÎÇò Ìè¨ÏÖò : %d Í∞ú", allPotion);
     gotoxy(130, 31);
-    printf("∞Ê«Ëƒ° ∆˜º« : %d ∞≥", expPotion);
+    printf("Í≤ΩÌóòÏπò Ìè¨ÏÖò : %d Í∞ú", expPotion);
 }
 
 int CheckMoney(int num)
@@ -111,7 +111,7 @@ int CheckMoney(int num)
     {
         gotoxy(60, 22);
         setcolor(C_RED_, C_BLACK);
-        printf("±∏∏≈∞° ∫“∞°¥…«’¥œ¥Ÿ.");
+        printf("Íµ¨Îß§Í∞Ä Î∂àÍ∞ÄÎä•Ìï©ÎãàÎã§.");
         setcolor(C_WHITE, C_BLACK);
 
         return -1;
@@ -121,7 +121,7 @@ int CheckMoney(int num)
 
         gotoxy(60, 22);
         setcolor(C_GREEN_, C_BLACK);
-        printf("√÷¥Î ºˆ∑Æø° µµ¥ﬁ«ﬂΩ¿¥œ¥Ÿ");
+        printf("ÏµúÎåÄ ÏàòÎüâÏóê ÎèÑÎã¨ÌñàÏäµÎãàÎã§");
         setcolor(C_WHITE, C_BLACK);
 
         return 1;
@@ -130,7 +130,7 @@ int CheckMoney(int num)
     {
         gotoxy(60, 22);
         setcolor(C_GREEN_, C_BLACK);
-        printf("±∏∏≈∞° ∞°¥…«’¥œ¥Ÿ.");
+        printf("Íµ¨Îß§Í∞Ä Í∞ÄÎä•Ìï©ÎãàÎã§.");
         setcolor(C_WHITE, C_BLACK);
 
         return 0;
@@ -144,19 +144,19 @@ int MoneyGacha()
     if (ran <= 20)
     {
         gotoxy(50, 39);
-        printf("°€ πË∆√ ±›æ◊ ∏∏≈≠ æÚ¿∏ºÃΩ¿¥œ¥Ÿ.");
+        printf("‚óã Î∞∞ÌåÖ Í∏àÏï° ÎßåÌÅº ÏñªÏúºÏÖ®ÏäµÎãàÎã§.");
         return -1;
     }
     else if (ran > 60)
     {
         gotoxy(50, 39);
-        printf("°‡ πË∆√ ±›æ◊ ∏∏≈≠ ¿“¿∏ºÃΩ¿¥œ¥Ÿ.");
+        printf("‚ñ° Î∞∞ÌåÖ Í∏àÏï° ÎßåÌÅº ÏûÉÏúºÏÖ®ÏäµÎãàÎã§.");
         return 1;
     }
     else
     {
         gotoxy(50, 39);
-        printf("°‚ º“¿Ø ±›æ◊ ∫Øµø¿Ã æ¯Ω¿¥œ¥Ÿ.");
+        printf("‚ñ≥ ÏÜåÏú† Í∏àÏï° Î≥ÄÎèôÏù¥ ÏóÜÏäµÎãàÎã§.");
         return 0;
     }
 }
@@ -229,9 +229,9 @@ int DrawUpDown() {
                 if (CheckMoney(num) == 1) num -= 1;
 
                 gotoxy(60, 29);  printf("         ");
-                gotoxy(60, 29);  printf("±∏∏≈ : %d∞≥", num);
+                gotoxy(60, 29);  printf("Íµ¨Îß§ : %dÍ∞ú", num);
                 gotoxy(60, 31);  printf("                   ");
-                gotoxy(60, 31);  printf("√— ±›æ◊: %d", price[Choice_Status] * num);
+                gotoxy(60, 31);  printf("Ï¥ù Í∏àÏï°: %d", price[Choice_Status] * num);
                 break;
 
             case DOWN:
@@ -241,9 +241,9 @@ int DrawUpDown() {
                 if (CheckMoney(num) == -1)num = 0;
 
                 gotoxy(60, 29);  printf("         ");
-                gotoxy(60, 29);  printf("±∏∏≈ : %d∞≥", num);
+                gotoxy(60, 29);  printf("Íµ¨Îß§ : %dÍ∞ú", num);
                 gotoxy(60, 31);  printf("                   ");
-                gotoxy(60, 31);  printf("√— ±›æ◊: %d", price[Choice_Status] * num);
+                gotoxy(60, 31);  printf("Ï¥ù Í∏àÏï°: %d", price[Choice_Status] * num);
                 break;
             case LEFT:
                 if (Select_Buy_Chioce) {
@@ -307,44 +307,44 @@ int DrawUpDown() {
 void Box(int color, int bgcolor)
 {
     setcolor(color, bgcolor);
-    gotoxy(30, 5); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(30, 6); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 7); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 8); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 9); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 10); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 11); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 12); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 13); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 14); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 15); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 16); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 17); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 18); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 19); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 20); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 21); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 22); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 23); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 24); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 25); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 26); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 27); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 28); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 29); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 30); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 31); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 32); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 33); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 34); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 35); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 36); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 37); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 38); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 39); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 40); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 41); printf("¶≠                                                                           ¶≠");//1
-    gotoxy(30, 42); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(30, 5); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(30, 6); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 7); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 8); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 9); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 10); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 11); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 12); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 13); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 14); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 15); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 16); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 17); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 18); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 19); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 20); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 21); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 22); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 23); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 24); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 25); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 26); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 27); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 28); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 29); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 30); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 31); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 32); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 33); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 34); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 35); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 36); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 37); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 38); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 39); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 40); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 41); printf("‚îÉ                                                                           ‚îÉ");//1
+    gotoxy(30, 42); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
     setcolor(C_WHITE, C_BLACK);
 }
 void SetEXP()
@@ -360,7 +360,7 @@ void SetEXP()
     for (int y = 0; y < 50; y++)
     {
         gotoxy(120, y);
-        printf("¶¢");
+        printf("‚îÇ");
     }
 
     drawInventory();
@@ -370,7 +370,7 @@ void SetEXP()
 
 void drawPlusEXP(double plus)
 {
-    // ∞Ê«Ëƒ° √‚∑¬
+    // Í≤ΩÌóòÏπò Ï∂úÎ†•
 
     RemoveItemInstructions();
     drawInventory();
@@ -379,8 +379,8 @@ void drawPlusEXP(double plus)
     int exRatio = ratioExp;
     char str[50];
 
-    gotoxy(49, 7); printf("<     ∞Ê «Ë ƒ°   π∞ æ‡   ªÁ øÎ «œ ±‚    >"); Sleep(100);
-    gotoxy(49, 10); printf("  ¿˚øÎ ¿¸ :  Lv. %d    ∞Ê«Ëƒ° (%6d/%6d)", level, pcExp, maxExp); Sleep(100);
+    gotoxy(49, 7); printf("<     Í≤Ω Ìóò Ïπò   Î¨º ÏïΩ   ÏÇ¨ Ïö© Ìïò Í∏∞    >"); Sleep(100);
+    gotoxy(49, 10); printf("  Ï†ÅÏö© Ï†Ñ :  Lv. %d    Í≤ΩÌóòÏπò (%6d/%6d)", level, pcExp, maxExp); Sleep(100);
     gotoxy(33, 14); printf("exp ");
     setcolor(C_WHITE, C_GREEN);
     for (int i = 0; i < ratioExp; i++)
@@ -411,8 +411,8 @@ void drawPlusEXP(double plus)
         {
             selectSkill();
             SetEXP();
-            gotoxy(49, 7); printf("<     ∞Ê «Ë ƒ°   π∞ æ‡   ªÁ øÎ «œ ±‚    >"); Sleep(100);
-            gotoxy(49, 10); printf("  ¿˚øÎ ¿¸ :  Lv. %d    ∞Ê«Ëƒ° (%6d/%6d)", level, pcExp, maxExp); Sleep(100);
+            gotoxy(49, 7); printf("<     Í≤Ω Ìóò Ïπò   Î¨º ÏïΩ   ÏÇ¨ Ïö© Ìïò Í∏∞    >"); Sleep(100);
+            gotoxy(49, 10); printf("  Ï†ÅÏö© Ï†Ñ :  Lv. %d    Í≤ΩÌóòÏπò (%6d/%6d)", level, pcExp, maxExp); Sleep(100);
             gotoxy(33, 14); printf("exp ");
             setcolor(C_WHITE, C_GREEN);
             for (int i = 0; i < exRatio; i++)
@@ -426,23 +426,23 @@ void drawPlusEXP(double plus)
 
     ratioExp = pcExp / (maxExp / 50.0f);
 
-    gotoxy(49, 17); printf("                  ¶≠  ¶≠                  "); Sleep(100);
-    gotoxy(49, 18); printf("                  ¶≠  ¶≠                  "); Sleep(100);
-    gotoxy(49, 19); printf("                  ¶≠  ¶≠                  "); Sleep(100);
-    gotoxy(49, 20); printf("                  ¶≠  ¶≠                  "); Sleep(100);
+    gotoxy(49, 17); printf("                  ‚îÉ  ‚îÉ                  "); Sleep(100);
+    gotoxy(49, 18); printf("                  ‚îÉ  ‚îÉ                  "); Sleep(100);
+    gotoxy(49, 19); printf("                  ‚îÉ  ‚îÉ                  "); Sleep(100);
+    gotoxy(49, 20); printf("                  ‚îÉ  ‚îÉ                  "); Sleep(100);
     gotoxy(49, 21); printf("                                          "); Sleep(100);
-    gotoxy(49, 22); printf("         ∞Ê«Ëƒ° %.2lf∏¶ æÚæ˙Ω¿¥œ¥Ÿ.       ", plus); Sleep(100);
+    gotoxy(49, 22); printf("         Í≤ΩÌóòÏπò %.2lfÎ•º ÏñªÏóàÏäµÎãàÎã§.       ", plus); Sleep(100);
     gotoxy(49, 23); printf("                                          "); Sleep(100);
-    gotoxy(49, 24); printf("                  ¶≠  ¶≠                  "); Sleep(100);
-    gotoxy(49, 25); printf("                  ¶≠  ¶≠                  "); Sleep(100);
-    gotoxy(49, 26); printf("                  ¶≠  ¶≠                  "); Sleep(100);
-    gotoxy(49, 27); printf("               ___¶≠  ¶≠___               "); Sleep(100);
-    gotoxy(49, 28); printf("               °¨       /                 "); Sleep(100);
-    gotoxy(49, 29); printf("                 °¨    /                  "); Sleep(100);
-    gotoxy(49, 30); printf("                   °¨ /                   "); Sleep(100);
-    gotoxy(49, 31); printf("                     ¢ß                   "); Sleep(100);
+    gotoxy(49, 24); printf("                  ‚îÉ  ‚îÉ                  "); Sleep(100);
+    gotoxy(49, 25); printf("                  ‚îÉ  ‚îÉ                  "); Sleep(100);
+    gotoxy(49, 26); printf("                  ‚îÉ  ‚îÉ                  "); Sleep(100);
+    gotoxy(49, 27); printf("               ___‚îÉ  ‚îÉ___               "); Sleep(100);
+    gotoxy(49, 28); printf("               Ôºº       /                 "); Sleep(100);
+    gotoxy(49, 29); printf("                 Ôºº    /                  "); Sleep(100);
+    gotoxy(49, 30); printf("                   Ôºº /                   "); Sleep(100);
+    gotoxy(49, 31); printf("                     Àá                   "); Sleep(100);
 
-    gotoxy(49, 34); printf("  ¿˚øÎ »ƒ :  Lv. %d    ∞Ê«Ëƒ° (%6d/%6d)", level, pcExp, maxExp);//1
+    gotoxy(49, 34); printf("  Ï†ÅÏö© ÌõÑ :  Lv. %d    Í≤ΩÌóòÏπò (%6d/%6d)", level, pcExp, maxExp);//1
     gotoxy(33, 37); printf("exp ");
     setcolor(C_WHITE, C_GREEN);
     for (int i = 0; i < ratioExp; i++)
@@ -497,9 +497,9 @@ void Show_Choice()
         }
     }
     setcolor(C_WHITE, C_BLACK);
-    gotoxy(50, 35); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(50, 36); printf("¶≠   ±∏∏≈«œ±‚   ¶≠");//1
-    gotoxy(50, 37); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(50, 35); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(50, 36); printf("‚îÉ   Íµ¨Îß§ÌïòÍ∏∞   ‚îÉ");//1
+    gotoxy(50, 37); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 
     for (int x = 70; x < 90; x++) {
         for (int y = 35; y < 40; y++) {
@@ -509,9 +509,9 @@ void Show_Choice()
     }
     setcolor(C_WHITE, C_BLACK);
 
-    gotoxy(70, 35); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(70, 36); printf("¶≠  æ∆¿Ã≈€ º±≈√ ¶≠");//1
-    gotoxy(70, 37); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(70, 35); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(70, 36); printf("‚îÉ  ÏïÑÏù¥ÌÖú ÏÑ†ÌÉù ‚îÉ");//1
+    gotoxy(70, 37); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 }
 void ReturnBUYItem_Choice()
 {
@@ -524,9 +524,9 @@ void ReturnBUYItem_Choice()
         }
     }
     setcolor(C_WHITE, C_BLACK);
-    gotoxy(50, 35); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(50, 36); printf("¶≠   ±∏∏≈«œ±‚   ¶≠");//1
-    gotoxy(50, 37); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(50, 35); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(50, 36); printf("‚îÉ   Íµ¨Îß§ÌïòÍ∏∞   ‚îÉ");//1
+    gotoxy(50, 37); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 
     for (int x = 70; x < 90; x++) {
         for (int y = 35; y < 40; y++) {
@@ -536,9 +536,9 @@ void ReturnBUYItem_Choice()
     }
     setcolor(C_GREEN_, C_BLACK);
 
-    gotoxy(70, 35); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(70, 36); printf("¶≠  æ∆¿Ã≈€ º±≈√ ¶≠");//1
-    gotoxy(70, 37); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(70, 35); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(70, 36); printf("‚îÉ  ÏïÑÏù¥ÌÖú ÏÑ†ÌÉù ‚îÉ");//1
+    gotoxy(70, 37); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 }
 void SelectBUYItem_Choice()
 {
@@ -551,9 +551,9 @@ void SelectBUYItem_Choice()
         }
     }
     setcolor(C_GREEN_, C_BLACK);
-    gotoxy(50, 35); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(50, 36); printf("¶≠   ±∏∏≈«œ±‚   ¶≠");//1
-    gotoxy(50, 37); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(50, 35); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(50, 36); printf("‚îÉ   Íµ¨Îß§ÌïòÍ∏∞   ‚îÉ");//1
+    gotoxy(50, 37); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 
     for (int x = 70; x < 90; x++) {
         for (int y = 35; y < 40; y++) {
@@ -563,9 +563,9 @@ void SelectBUYItem_Choice()
     }
     setcolor(C_WHITE, C_BLACK);
 
-    gotoxy(70, 35); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(70, 36); printf("¶≠  æ∆¿Ã≈€ º±≈√ ¶≠");//1
-    gotoxy(70, 37); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(70, 35); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(70, 36); printf("‚îÉ  ÏïÑÏù¥ÌÖú ÏÑ†ÌÉù ‚îÉ");//1
+    gotoxy(70, 37); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 }
 
 int DrawBuyItem() {
@@ -629,9 +629,9 @@ void SelectDOWN()
         }
     }
     setcolor(C_WHITE, C_BLACK);
-    gotoxy(80, 26); printf("¶Æ¶¨¶Ø");//0
-    gotoxy(80, 27); printf(" °Ë");//1
-    gotoxy(80, 28); printf("¶±¶¨¶∞");
+    gotoxy(80, 26); printf("‚îè‚îÅ‚îì");//0
+    gotoxy(80, 27); printf(" ‚Üë");//1
+    gotoxy(80, 28); printf("‚îó‚îÅ‚îõ");
 
     for (int x = 80; x < 90; x++) {
         for (int y = 30; y < 33; y++) {
@@ -641,9 +641,9 @@ void SelectDOWN()
     }
     setcolor(C_GREEN_, C_BLACK);
 
-    gotoxy(80, 30); printf("¶Æ¶¨¶Ø");//0
-    gotoxy(80, 31); printf(" °È");//1
-    gotoxy(80, 32); printf("¶±¶¨¶∞");
+    gotoxy(80, 30); printf("‚îè‚îÅ‚îì");//0
+    gotoxy(80, 31); printf(" ‚Üì");//1
+    gotoxy(80, 32); printf("‚îó‚îÅ‚îõ");
 
 
 }
@@ -658,9 +658,9 @@ void SelectUP()
         }
     }
     setcolor(C_GREEN_, C_BLACK);
-    gotoxy(80, 26); printf("¶Æ¶¨¶Ø");//0
-    gotoxy(80, 27); printf(" °Ë");//1
-    gotoxy(80, 28); printf("¶±¶¨¶∞");
+    gotoxy(80, 26); printf("‚îè‚îÅ‚îì");//0
+    gotoxy(80, 27); printf(" ‚Üë");//1
+    gotoxy(80, 28); printf("‚îó‚îÅ‚îõ");
 
     for (int x = 80; x < 90; x++) {
         for (int y = 30; y < 33; y++) {
@@ -670,9 +670,9 @@ void SelectUP()
     }
     setcolor(C_WHITE, C_BLACK);
 
-    gotoxy(80, 30); printf("¶Æ¶¨¶Ø");//0
-    gotoxy(80, 31); printf(" °È");//1
-    gotoxy(80, 32); printf("¶±¶¨¶∞");
+    gotoxy(80, 30); printf("‚îè‚îÅ‚îì");//0
+    gotoxy(80, 31); printf(" ‚Üì");//1
+    gotoxy(80, 32); printf("‚îó‚îÅ‚îõ");
 }
 
 void UPandDOWN() {
@@ -680,16 +680,16 @@ void UPandDOWN() {
     setcolor(C_WHITE, C_BLACK);
 
     gotoxy(60, 29);  printf("         ");
-    gotoxy(60, 29);  printf("±∏∏≈ : %d∞≥", num);
+    gotoxy(60, 29);  printf("Íµ¨Îß§ : %dÍ∞ú", num);
     gotoxy(60, 31);  printf("                   ");
-    gotoxy(60, 31);  printf("√— ±›æ◊: %d", price[Choice_Status] * num);
+    gotoxy(60, 31);  printf("Ï¥ù Í∏àÏï°: %d", price[Choice_Status] * num);
 
-    gotoxy(80, 26); printf("¶Æ¶¨¶Ø");//0
-    gotoxy(80, 27); printf(" °Ë");//1
-    gotoxy(80, 28); printf("¶±¶¨¶∞");
-    gotoxy(80, 30); printf("¶Æ¶¨¶Ø");//0
-    gotoxy(80, 31); printf(" °È");//1
-    gotoxy(80, 32); printf("¶±¶¨¶∞");
+    gotoxy(80, 26); printf("‚îè‚îÅ‚îì");//0
+    gotoxy(80, 27); printf(" ‚Üë");//1
+    gotoxy(80, 28); printf("‚îó‚îÅ‚îõ");
+    gotoxy(80, 30); printf("‚îè‚îÅ‚îì");//0
+    gotoxy(80, 31); printf(" ‚Üì");//1
+    gotoxy(80, 32); printf("‚îó‚îÅ‚îõ");
 }
 
 
@@ -704,15 +704,15 @@ void SelectBUYItem()
         }
     }
     setcolor(C_GREEN_, C_BLACK);
-    gotoxy(50, 20); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(50, 21); printf("¶≠   ±∏∏≈«œ±‚   ¶≠");//1
-    gotoxy(50, 22); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(50, 20); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(50, 21); printf("‚îÉ   Íµ¨Îß§ÌïòÍ∏∞   ‚îÉ");//1
+    gotoxy(50, 22); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 
     setcolor(C_WHITE, C_BLACK);
 
-    gotoxy(70, 20); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(70, 21); printf("¶≠  æ∆¿Ã≈€ º±≈√ ¶≠");//1
-    gotoxy(70, 22); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(70, 20); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(70, 21); printf("‚îÉ  ÏïÑÏù¥ÌÖú ÏÑ†ÌÉù ‚îÉ");//1
+    gotoxy(70, 22); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 }
 
 void ReturnSelectItem()
@@ -726,14 +726,14 @@ void ReturnSelectItem()
             printf(" ");
         }
     }
-    gotoxy(50, 20); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(50, 21); printf("¶≠   ±∏∏≈«œ±‚   ¶≠");//1
-    gotoxy(50, 22); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(50, 20); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(50, 21); printf("‚îÉ   Íµ¨Îß§ÌïòÍ∏∞   ‚îÉ");//1
+    gotoxy(50, 22); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 
     setcolor(C_GREEN_, C_BLACK);
-    gotoxy(70, 20); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(70, 21); printf("¶≠  æ∆¿Ã≈€ º±≈√ ¶≠");//1
-    gotoxy(70, 22); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(70, 20); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(70, 21); printf("‚îÉ  ÏïÑÏù¥ÌÖú ÏÑ†ÌÉù ‚îÉ");//1
+    gotoxy(70, 22); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 }
 
 void Buttons() {
@@ -745,13 +745,13 @@ void Buttons() {
             printf(" ");
         }
     }
-    gotoxy(50, 20); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(50, 21); printf("¶≠   ±∏∏≈«œ±‚   ¶≠");//1
-    gotoxy(50, 22); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(50, 20); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(50, 21); printf("‚îÉ   Íµ¨Îß§ÌïòÍ∏∞   ‚îÉ");//1
+    gotoxy(50, 22); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 
-    gotoxy(70, 20); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(70, 21); printf("¶≠  æ∆¿Ã≈€ º±≈√ ¶≠");//1
-    gotoxy(70, 22); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(70, 20); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(70, 21); printf("‚îÉ  ÏïÑÏù¥ÌÖú ÏÑ†ÌÉù ‚îÉ");//1
+    gotoxy(70, 22); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
 }
 
 void SetZero()
@@ -799,7 +799,7 @@ void Calculate()
     default:
         break;
     }
-    gotoxy(60, 41); printf("√— ±›æ◊ : %d ø¯", total);
+    gotoxy(60, 41); printf("Ï¥ù Í∏àÏï° : %d Ïõê", total);
 
 
 }
@@ -819,62 +819,62 @@ void DrawItemInstructions()
     switch (Choice_Status)
     {
     case HP:
-        gotoxy(49, 7); printf("<      æ∆  ¿Ã  ≈€     ºº  ∫Œ  ¡§  ∫∏    >");//1
+        gotoxy(49, 7); printf("<      ÏïÑ  Ïù¥  ÌÖú     ÏÑ∏  Î∂Ä  Ï†ï  Î≥¥    >");//1
         gotoxy(49, 11); printf("                                         ");//1
-        gotoxy(49, 12); printf("        ****** H P ∆˜ º« ******          ");//1
+        gotoxy(49, 12); printf("        ****** H P Ìè¨ ÏÖò ******          ");//1
         gotoxy(49, 13); printf("                                         ");//1
-        gotoxy(49, 14); printf("           ∞°∞› : 400 ø¯                 ");//1
+        gotoxy(49, 14); printf("           Í∞ÄÍ≤© : 400 Ïõê                 ");//1
         gotoxy(49, 15); printf("                                         ");//1
-        gotoxy(49, 16); printf("           »ø∞˙                          ");//1
-        gotoxy(49, 17); printf("           - √÷¥Î √º∑¬¿« 30%% »∏∫π       ");//1
+        gotoxy(49, 16); printf("           Ìö®Í≥º                          ");//1
+        gotoxy(49, 17); printf("           - ÏµúÎåÄ Ï≤¥Î†•Ïùò 30%% ÌöåÎ≥µ       ");//1
         gotoxy(49, 18); printf("                                         ");//1
         break;
     case MP:
-        gotoxy(49, 7); printf("<      æ∆  ¿Ã  ≈€     ºº  ∫Œ  ¡§  ∫∏    >");//1
+        gotoxy(49, 7); printf("<      ÏïÑ  Ïù¥  ÌÖú     ÏÑ∏  Î∂Ä  Ï†ï  Î≥¥    >");//1
         gotoxy(49, 11); printf("                                         ");//1
-        gotoxy(49, 12); printf("        ****** M P ∆˜ º« ******          ");//1
+        gotoxy(49, 12); printf("        ****** M P Ìè¨ ÏÖò ******          ");//1
         gotoxy(49, 13); printf("                                         ");//1
-        gotoxy(49, 14); printf("           ∞°∞› : 300 ø¯                 ");//1
+        gotoxy(49, 14); printf("           Í∞ÄÍ≤© : 300 Ïõê                 ");//1
         gotoxy(49, 15); printf("                                         ");//1
-        gotoxy(49, 16); printf("           »ø∞˙                          ");//1
-        gotoxy(49, 17); printf("           - √÷¥Î ∏∂≥™¿« 30%% »∏∫π       ");//1
+        gotoxy(49, 16); printf("           Ìö®Í≥º                          ");//1
+        gotoxy(49, 17); printf("           - ÏµúÎåÄ ÎßàÎÇòÏùò 30%% ÌöåÎ≥µ       ");//1
         gotoxy(49, 18); printf("                                         ");//1
         break;
 
     case ALL:
-        gotoxy(49, 7); printf("<      æ∆  ¿Ã  ≈€     ºº  ∫Œ  ¡§  ∫∏    >");//1
+        gotoxy(49, 7); printf("<      ÏïÑ  Ïù¥  ÌÖú     ÏÑ∏  Î∂Ä  Ï†ï  Î≥¥    >");//1
         gotoxy(49, 11); printf("                                         ");//1
-        gotoxy(49, 12); printf("        ****** ALL ∆˜ º« ******          ");//1
+        gotoxy(49, 12); printf("        ****** ALL Ìè¨ ÏÖò ******          ");//1
         gotoxy(49, 13); printf("                                         ");//1
-        gotoxy(49, 14); printf("           ∞°∞› : 700 ø¯                 ");//1
+        gotoxy(49, 14); printf("           Í∞ÄÍ≤© : 700 Ïõê                 ");//1
         gotoxy(49, 15); printf("                                         ");//1
-        gotoxy(49, 16); printf("           »ø∞˙                          ");//1
-        gotoxy(49, 17); printf("           - √÷¥Î ∏∂≥™øÕ √º∑¬¿«          ");//1
-        gotoxy(49, 18); printf("             30%%∏¶ »∏∫π                 ");//1
+        gotoxy(49, 16); printf("           Ìö®Í≥º                          ");//1
+        gotoxy(49, 17); printf("           - ÏµúÎåÄ ÎßàÎÇòÏôÄ Ï≤¥Î†•Ïùò          ");//1
+        gotoxy(49, 18); printf("             30%%Î•º ÌöåÎ≥µ                 ");//1
         break;
 
     case EXP:
-        gotoxy(49, 7); printf("<      æ∆  ¿Ã  ≈€     ºº  ∫Œ  ¡§  ∫∏    >");//1
+        gotoxy(49, 7); printf("<      ÏïÑ  Ïù¥  ÌÖú     ÏÑ∏  Î∂Ä  Ï†ï  Î≥¥    >");//1
         gotoxy(49, 11); printf("                                         ");//1
-        gotoxy(49, 12); printf("        ****** EXP ∆˜ º« ******          ");//1
+        gotoxy(49, 12); printf("        ****** EXP Ìè¨ ÏÖò ******          ");//1
         gotoxy(49, 13); printf("                                         ");//1
-        gotoxy(49, 14); printf("           ∞°∞› : 4000 ø¯                ");//1
+        gotoxy(49, 14); printf("           Í∞ÄÍ≤© : 4000 Ïõê                ");//1
         gotoxy(49, 15); printf("                                         ");//1
-        gotoxy(49, 16); printf("           »ø∞˙                          ");//1
-        gotoxy(49, 17); printf("           - √÷¥Î ∞Ê«Ëƒ°¿« 10 ~ 60%%∏¶   ");//1
-        gotoxy(49, 18); printf("             ∑£¥˝¿∏∑Œ ∫Œø©               ");//1
+        gotoxy(49, 16); printf("           Ìö®Í≥º                          ");//1
+        gotoxy(49, 17); printf("           - ÏµúÎåÄ Í≤ΩÌóòÏπòÏùò 10 ~ 60%%Î•º   ");//1
+        gotoxy(49, 18); printf("             ÎûúÎç§ÏúºÎ°ú Î∂ÄÏó¨               ");//1
         break;
 
     case GOLD:
-        gotoxy(49, 7); printf("<      æ∆  ¿Ã  ≈€     ºº  ∫Œ  ¡§  ∫∏    >");//1
-        gotoxy(49, 11); printf("        ****** ∞ÒµÂ π⁄Ω∫ ******          ");//1
+        gotoxy(49, 7); printf("<      ÏïÑ  Ïù¥  ÌÖú     ÏÑ∏  Î∂Ä  Ï†ï  Î≥¥    >");//1
+        gotoxy(49, 11); printf("        ****** Í≥®Îìú Î∞ïÏä§ ******          ");//1
         gotoxy(49, 12); printf("                                         ");//1
-        gotoxy(49, 13); printf("            ∞°∞› : πË∆√±›æ◊              ");//1
-        gotoxy(49, 14); printf("     πˆ∆∞ «—π¯ ¥©∏¶∂ß ∏∂¥Ÿ 100ø¯æø ¡ı∞®  ");//1
+        gotoxy(49, 13); printf("            Í∞ÄÍ≤© : Î∞∞ÌåÖÍ∏àÏï°              ");//1
+        gotoxy(49, 14); printf("     Î≤ÑÌäº ÌïúÎ≤à ÎàÑÎ•ºÎïå ÎßàÎã§ 100ÏõêÏî© Ï¶ùÍ∞ê  ");//1
         gotoxy(49, 15); printf("                                         ");//1
-        gotoxy(49, 16); printf("     - °€(20%%) : (∫£∆√±›æ◊) ∏∏≈≠ πﬁ±‚   ");//1
-        gotoxy(49, 17); printf("     - °‚(40%%) : (∫£∆√±›æ◊) µπ∑¡ πﬁ±‚   ");//1
-        gotoxy(49, 18); printf("     - °‡(40%%) : (∫£∆√±›æ◊) ∏∏≈≠ ¿“±‚   ");//1
+        gotoxy(49, 16); printf("     - ‚óã(20%%) : (Î≤†ÌåÖÍ∏àÏï°) ÎßåÌÅº Î∞õÍ∏∞   ");//1
+        gotoxy(49, 17); printf("     - ‚ñ≥(40%%) : (Î≤†ÌåÖÍ∏àÏï°) ÎèåÎ†§ Î∞õÍ∏∞   ");//1
+        gotoxy(49, 18); printf("     - ‚ñ°(40%%) : (Î≤†ÌåÖÍ∏àÏï°) ÎßåÌÅº ÏûÉÍ∏∞   ");//1
         break;
 
     default:
@@ -882,7 +882,7 @@ void DrawItemInstructions()
     }
 }
 
-//√ ±‚»≠
+//Ï¥àÍ∏∞Ìôî
 void RemoveItemInstructions()
 {
     for (int y = 7; y < 40; y++)
@@ -945,34 +945,34 @@ void DrawSelect(int before, int after)
 void DrawHPPortion(int color, int bgcolor)
 {
     setcolor(color, bgcolor);
-    gotoxy(10, 5); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");//0
-    gotoxy(10, 6); printf("¶≠  H P ∆˜º« ¶≠");//1
-    gotoxy(10, 7); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(10, 5); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");//0
+    gotoxy(10, 6); printf("‚îÉ  H P Ìè¨ÏÖò ‚îÉ");//1
+    gotoxy(10, 7); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
     setcolor(C_WHITE, C_BLACK);
 }
 void DrawMPPortion(int color, int bgcolor)
 {
     setcolor(color, bgcolor);
-    gotoxy(10, 12); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");
-    gotoxy(10, 13); printf("¶≠  M P ∆˜º« ¶≠");//1
-    gotoxy(10, 14); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(10, 12); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");
+    gotoxy(10, 13); printf("‚îÉ  M P Ìè¨ÏÖò ‚îÉ");//1
+    gotoxy(10, 14); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
     setcolor(C_WHITE, C_BLACK);
 }
 void DrawALLPortion(int color, int bgcolor)
 {
     setcolor(color, bgcolor);
-    gotoxy(10, 19); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");
-    gotoxy(10, 20); printf("¶≠  ALL ∆˜º« ¶≠");
-    gotoxy(10, 21); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(10, 19); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");
+    gotoxy(10, 20); printf("‚îÉ  ALL Ìè¨ÏÖò ‚îÉ");
+    gotoxy(10, 21); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
     setcolor(C_WHITE, C_BLACK);
 }
 
 void DrawEXPPortion(int color, int bgcolor)
 {
     setcolor(color, bgcolor);
-    gotoxy(10, 26); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");
-    gotoxy(10, 27); printf("¶≠  EXP ∆˜º« ¶≠");
-    gotoxy(10, 28); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(10, 26); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");
+    gotoxy(10, 27); printf("‚îÉ  EXP Ìè¨ÏÖò ‚îÉ");
+    gotoxy(10, 28); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
     setcolor(C_WHITE, C_BLACK);
 }
 
@@ -980,17 +980,17 @@ void DrawGOLDBOX(int color, int bgcolor)
 {
     setcolor(color, bgcolor);
 
-    gotoxy(10, 33); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");
-    gotoxy(10, 34); printf("¶≠  ∞ÒµÂπ⁄Ω∫ ¶≠");
-    gotoxy(10, 35); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");;
+    gotoxy(10, 33); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");
+    gotoxy(10, 34); printf("‚îÉ  Í≥®ÎìúÎ∞ïÏä§ ‚îÉ");
+    gotoxy(10, 35); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");;
     setcolor(C_WHITE, C_BLACK);
 }
 
 void DrawLEAVE(int color, int bgcolor)
 {
     setcolor(color, bgcolor);
-    gotoxy(10, 40); printf("¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶Ø");
-    gotoxy(10, 41); printf("¶≠  ≥™ ∞° ±‚ ¶≠");
-    gotoxy(10, 42); printf("¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶∞");
+    gotoxy(10, 40); printf("‚îè‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îì");
+    gotoxy(10, 41); printf("‚îÉ  ÎÇò Í∞Ä Í∏∞ ‚îÉ");
+    gotoxy(10, 42); printf("‚îó‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îõ");
     setcolor(C_WHITE, C_BLACK);
 }
