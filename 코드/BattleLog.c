@@ -1,5 +1,5 @@
 #include"BattleLog.h"
-// ÀÏ¹İ ¸ó½ºÅÍ¿ÍÀÇ ÀüÅõ »óÈ² ·Î±× Ãâ·Â
+// ì¼ë°˜ ëª¬ìŠ¤í„°ì™€ì˜ ì „íˆ¬ ìƒí™© ë¡œê·¸ ì¶œë ¥
 void drawNormalBattleSituationLog()
 {
     for (int y = 1; y < 38; y++)
@@ -10,8 +10,8 @@ void drawNormalBattleSituationLog()
             printf(" ");
         }
     }
-    gotoxy(130, 5); printf("ÀüÅõ »óÈ² Ãâ·Â");
-    drawNormalBattleSituationLogUpdate(""); // ·Î±× Ãâ·Â ÃÊ±âÈ­
+    gotoxy(130, 5); printf("ì „íˆ¬ ìƒí™© ì¶œë ¥");
+    drawNormalBattleSituationLogUpdate(""); // ë¡œê·¸ ì¶œë ¥ ì´ˆê¸°í™”
 
 }
 
