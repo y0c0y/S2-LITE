@@ -1,15 +1,15 @@
 #include"ChangeHpMp.h"
 void drawBossBattleSituationMonsterStat(Monster* s)
 {
-	// Ã¼·Â, ¸¶³ª ºñÀ²
+	// ì²´ë ¥, ë§ˆë‚˜ ë¹„ìœ¨
 
-	// Ã¼·Â Ãâ·Â
+	// ì²´ë ¥ ì¶œë ¥
 	int ratioHp = s->hp / (s->maxHp / 32.0f);
 
-	// Ã¼·Â Ãâ·Â
+	// ì²´ë ¥ ì¶œë ¥
 	setcolor(C_WHITE, C_BLACK);
-	gotoxy(105, 40); printf("¸ó½ºÅÍ");
-	gotoxy(105, 42); printf("Ã¼·Â");
+	gotoxy(105, 40); printf("ëª¬ìŠ¤í„°");
+	gotoxy(105, 42); printf("ì²´ë ¥");
 	gotoxy(110, 42);
 
 	setcolor(C_WHITE, C_RED_);
@@ -27,11 +27,11 @@ void drawBattleSituationPCMP(int FinalMp)
 	Dont_GetKey = 1;
 	int Sleep_time = abs(FinalMp - mp);
 	while (1) {
-		// Ã¼·Â, ¸¶³ª ºñÀ²
+		// ì²´ë ¥, ë§ˆë‚˜ ë¹„ìœ¨
 		int ratioMp = mp / (maxMp / 32.0f);
-		// ¸¶³ª Ãâ·Â
+		// ë§ˆë‚˜ ì¶œë ¥
 		setcolor(C_WHITE, C_BLACK);
-		gotoxy(105, 48); printf("¸¶³ª");
+		gotoxy(105, 48); printf("ë§ˆë‚˜");
 		gotoxy(110, 48);
 		setcolor(C_WHITE, C_BLUE_);
 
@@ -54,11 +54,11 @@ void drawBattleSituationPCMPUp(int FinalMp)
 		Dont_GetKey = 1;
 		int Sleep_time = abs(FinalMp - mp);
 		while (1) {
-			// Ã¼·Â, ¸¶³ª ºñÀ²
+			// ì²´ë ¥, ë§ˆë‚˜ ë¹„ìœ¨
 			int ratioMp = mp / (maxMp / 32.0f);
-			// ¸¶³ª Ãâ·Â
+			// ë§ˆë‚˜ ì¶œë ¥
 			setcolor(C_WHITE, C_BLACK);
-			gotoxy(105, 48); printf("¸¶³ª");
+			gotoxy(105, 48); printf("ë§ˆë‚˜");
 			gotoxy(110, 48);
 			setcolor(C_WHITE, C_BLUE_);
 
@@ -78,17 +78,17 @@ void drawBattleSituationPCMPUp(int FinalMp)
 }
 void drawBattleSituationMonsterHP(Monster* s, int FinalHp)
 {
-	// Ã¼·Â, ¸¶³ª ºñÀ²
+	// ì²´ë ¥, ë§ˆë‚˜ ë¹„ìœ¨
 	Dont_GetKey = 1;
 	int Sleep_time = abs(FinalHp - s->hp);
-	// Ã¼·Â Ãâ·Â
+	// ì²´ë ¥ ì¶œë ¥
 	while (1) {
 		int ratioHp = s->hp / (s->maxHp / 32.0f);
 
-		// Ã¼·Â Ãâ·Â
+		// ì²´ë ¥ ì¶œë ¥
 		setcolor(C_WHITE, C_BLACK);
-		gotoxy(105, 40); printf("¸ó½ºÅÍ");
-		gotoxy(105, 42); printf("Ã¼·Â");
+		gotoxy(105, 40); printf("ëª¬ìŠ¤í„°");
+		gotoxy(105, 42); printf("ì²´ë ¥");
 		gotoxy(110, 42);
 
 		setcolor(C_WHITE, C_RED_);
@@ -105,20 +105,20 @@ void drawBattleSituationMonsterHP(Monster* s, int FinalHp)
 	}
 	Dont_GetKey = 0;
 }
-// ÀÏ¹İ ¸ó½ºÅÍ¿ÍÀÇ ÀüÅõ »óÈ² Áß PC Ã¼·Â ¿òÁ÷ÀÌ¸é¼­ º¯ÇÏ°Ô
+// ì¼ë°˜ ëª¬ìŠ¤í„°ì™€ì˜ ì „íˆ¬ ìƒí™© ì¤‘ PC ì²´ë ¥ ì›€ì§ì´ë©´ì„œ ë³€í•˜ê²Œ
 void drawBattleSituationPCHP(int FinalHp)
 {
 	int Sleep_time = abs(FinalHp - hp);
 	Dont_GetKey = 1;
-	// Ã¼·Â, ¸¶³ª ºñÀ²
+	// ì²´ë ¥, ë§ˆë‚˜ ë¹„ìœ¨
 	while (1) {
 		int ratioHp = hp / (maxHp / 32.0f);
 		int ratioMp = mp / (maxMp / 32.0f);
 
-		// Ã¼·Â Ãâ·Â
+		// ì²´ë ¥ ì¶œë ¥
 		setcolor(C_WHITE, C_BLACK);
-		gotoxy(105, 44); printf("ÇÃ·¹ÀÌ¾î");
-		gotoxy(105, 46); printf("Ã¼·Â");
+		gotoxy(105, 44); printf("í”Œë ˆì´ì–´");
+		gotoxy(105, 46); printf("ì²´ë ¥");
 		gotoxy(110, 46);
 
 		setcolor(C_WHITE, C_RED_);
@@ -139,13 +139,13 @@ void drawBattleSituationPCHPUp(int FinalHp)
 {
 	int Sleep_time = abs(FinalHp - hp);
 	Dont_GetKey = 1;
-	// Ã¼·Â, ¸¶³ª ºñÀ²
+	// ì²´ë ¥, ë§ˆë‚˜ ë¹„ìœ¨
 	while (1) {
 		int ratioHp = hp / (maxHp / 32.0f);
-		// Ã¼·Â Ãâ·Â
+		// ì²´ë ¥ ì¶œë ¥
 		setcolor(C_WHITE, C_BLACK);
-		gotoxy(105, 44); printf("ÇÃ·¹ÀÌ¾î");
-		gotoxy(105, 46); printf("Ã¼·Â");
+		gotoxy(105, 44); printf("í”Œë ˆì´ì–´");
+		gotoxy(105, 46); printf("ì²´ë ¥");
 		gotoxy(110, 46);
 
 		setcolor(C_WHITE, C_RED_);
@@ -171,14 +171,14 @@ int CalculateFinalHp(int currentHp, int Damage) {
 void drawBossSituationPCStat()
 {
 
-	// Ã¼·Â, ¸¶³ª ºñÀ²
+	// ì²´ë ¥, ë§ˆë‚˜ ë¹„ìœ¨
 	int ratioHp = hp / (maxHp / 32.0f);
 	int ratioMp = mp / (maxMp / 32.0f);
 
-	// Ã¼·Â Ãâ·Â
+	// ì²´ë ¥ ì¶œë ¥
 	setcolor(C_WHITE, C_BLACK);
-	gotoxy(105, 44); printf("ÇÃ·¹ÀÌ¾î");
-	gotoxy(105, 46); printf("Ã¼·Â");
+	gotoxy(105, 44); printf("í”Œë ˆì´ì–´");
+	gotoxy(105, 46); printf("ì²´ë ¥");
 	gotoxy(110, 46);
 
 	setcolor(C_WHITE, C_RED_);
@@ -190,10 +190,10 @@ void drawBossSituationPCStat()
 	setcolor(C_WHITE, C_BLACK);
 	printf(" (%6d/%6d)", hp, maxHp);
 
-	// ¸¶³ª Ãâ·Â
+	// ë§ˆë‚˜ ì¶œë ¥
 
 	setcolor(C_WHITE, C_BLACK);
-	gotoxy(105, 48); printf("¸¶³ª");
+	gotoxy(105, 48); printf("ë§ˆë‚˜");
 	gotoxy(110, 48);
 	setcolor(C_WHITE, C_BLUE_);
 
