@@ -2,6 +2,6 @@
 #include"Cursor.h"
 #include<stdio.h>
 #include<stdlib.h>
-// ÀÏ¹İ ¸ó½ºÅÍ¿ÍÀÇ ÀüÅõ »óÈ² ·Î±× Ãâ·Â
+// ì¼ë°˜ ëª¬ìŠ¤í„°ì™€ì˜ ì „íˆ¬ ìƒí™© ë¡œê·¸ ì¶œë ¥
 void drawNormalBattleSituationLog();
 void drawNormalBattleSituationLogUpdate(char* str);
