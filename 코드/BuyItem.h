@@ -27,11 +27,11 @@ int SelectBUY;
 int num;
 int total;
 
-//±¸¸Å °¡°İÀ» °í¸¥ »óÅÂ¿¡¼­ ±¸¸Å¸¦ ÇÒÁö ¾ÈÇÒÁö ¿©ºÎ¸¦ Ãâ·Â
+//êµ¬ë§¤ ê°€ê²©ì„ ê³ ë¥¸ ìƒíƒœì—ì„œ êµ¬ë§¤ë¥¼ í• ì§€ ì•ˆí• ì§€ ì—¬ë¶€ë¥¼ ì¶œë ¥
 extern int Select_Buy_Chioce;
-void startBuyItem();// ¾ÆÀÌÅÛ Ã¢ È­¸é ½ÃÀÛÇÏ±â
+void startBuyItem();// ì•„ì´í…œ ì°½ í™”ë©´ ì‹œì‘í•˜ê¸°
 
-void DrawItmeFirst();//Ã¹ ½ÃÀÛ ±×¸®±â
+void DrawItmeFirst();//ì²« ì‹œì‘ ê·¸ë¦¬ê¸°
 void drawInventory();
 
 int CheckMoney(int num);
@@ -67,16 +67,16 @@ void SetZero();
 void Calculate();
 
 void drawPlusEXP(double plus);
-void UsingEXPPortion();// °æÇèÄ¡ Æ÷¼Ç Àû¿ë
-void SetEXP(); //°æÇèÄ¡ ±×¸² ±×¸®±â
+void UsingEXPPortion();// ê²½í—˜ì¹˜ í¬ì…˜ ì ìš©
+void SetEXP(); //ê²½í—˜ì¹˜ ê·¸ë¦¼ ê·¸ë¦¬ê¸°
 
 void Box(int color, int bgcolor);
-void DrawBOX(int color, int bgcolor);//»óÀÚ ±×¸®±â
+void DrawBOX(int color, int bgcolor);//ìƒì ê·¸ë¦¬ê¸°
 
-//¼³¸í ÀÛ¼º
+//ì„¤ëª… ì‘ì„±
 void DrawItemInstructions();
 
-//ÃÊ±âÈ­
+//ì´ˆê¸°í™”
 void RemoveItemInstructions();
 
 
